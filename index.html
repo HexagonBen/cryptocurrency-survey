@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cryptocurrency Survey</title>
+</head>
+<body>
+        <header>
+          <h1 id="title">Cryptocurrency Perception & Sentiment Survey</h1>
+          <p id="description"><strong>What is cryptocurrency to you? Why and how do you invest?</strong></p>
+        </header>
+          <div class="spacer">
+          </div>
+        <form id="survey-form">
+          <div class="input-headings">
+            <label id="name-label" for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-inputs"
+                placeholder="Satoshi Nakamoto"
+                required
+              />
+            <br>
+          <label for="email" id="email-label">Email</label>
+          <input id="email" type="email" name="email" placeholder="buythedip@gmail.com" required class="form-inputs">
+          <br>
+          <label for="number" id="number-label">How many different cryptocurrencies do you own?</label>
+          <input id="number" type="number" name="#of-cryptos-owned" placeholder="1" min=0 max=500 class="form-inputs">
+          <br>
+          <label for="dropdown" id="bitcoin-value-proposition-perception">Which description do you feel best represents bitcoin's value proposition?</label>
+          <select id="dropdown" class="form-inputs">
+            <option disabled selected value>Select an option</option>
+            <option value="Uncorrelated_financial_asset">Uncorrelated financial asset</option> 
+            <option value="Programmable_decentralized_network">Programmable decentralized network</option> 
+            <option value="Anonymous_darkweb_currency">Anonymous darkweb currency</option> 
+            <option value="Reserve_currency_of_crypto">Reserve currency of crypto</option> 
+            <option value="Asovereign_store_of_value">Asovereign store of value</option> 
+            <option value="Fast_and_cheap_global_payment_network">Fast and cheap global payment network</option> 
+            <option value="Other">Other (please explain)</option> 
+          </select>
+          <br>
+          <label for="textarea">If "other," explain here:</label>
+            <br>
+          <textarea id="textarea" type="textarea" name="bitcoin-value-proposition-text" placeholder="type explanation here" rows="5" cols="40" class="text-box"></textarea>
+          <br>
+          <div class="form-group">
+            <p>Where do you think bitcoin's price will be one year from now?</p>
+          <label>
+          <input
+                 name=price-anticipation
+                 value=higher
+                 type=radio
+                 class="input-radio"
+                 >higher (>25% higher from current price)</label>
+            <br>
+            <label>
+          <input
+                 name=price-anticipation
+                 value=about-the-same
+                 type=radio
+                 class="input-radio"
+                 >about the same (<25% variation from current price)</label>
+              <br>
+            <label>
+          <input
+                 name=price-anticipation
+                 value=lower
+                 type=radio
+                 class="input-radio"
+                 >lower (>25% lower from current price)</label>
+              <br>
+            <label>
+          <input
+                 name=price-anticipation
+                 value=no-idea
+                 type=radio
+                 class="input-radio"
+                 >no idea</label>
+              <br>
+               </div>
+            <div class="form-group">
+              <p>
+                What aspects of a cryptocurrency influence your decision to invest? <br> (check all that apply)
+              </p>
+              <label
+                ><input
+                  name="investment-reasons"
+                  value="use-case"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Unique and important use case</label>
+              <br>
+              <label
+                ><input
+                  name="investment-reasons"
+                  value="tokenomics"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Tokenomics/Supply dynamics</label>
+              <br>
+              <label
+                ><input
+                  name="investment-reasons"
+                  value="qualifications/reputation-of-core-dev-team"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Qualifications/Reputation of core dev team</label>
+              <br>
+              <label
+                ><input
+                  name="investment-reasons"
+                  value="amount-of-3rd-party-dev-activity"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Amount of 3rd-party dev activity</label>
+              <br>
+              <label
+                ><input
+                  name="investment-reasons"
+                  value="technicals-and-price-action"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Technical analysis/Historic price action</label>
+              <br>
+              <label
+                ><input
+                  name="investment-reasons"
+                  value="community-and-social-media-activity"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Community/Social media activity</label>
+              <br>
+              <label
+                ><input
+                  name="investment-reasons"
+                  value="endorsement-by-influencers"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Endorsement by prominent influencers</label>
+              <br>
+              <label
+                ><input
+                  name="investment-reasons"
+                  value="advice-from-friends-and-family"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Advice from friends and family</label>
+              <br>
+              <label
+                ><input
+                  name="investment-reasons"
+                  value="meme-power"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Meme power</label>
+              <br>
+            </div>
+            <input id="submit" type=submit value="SUBMIT SURVEY" class="submit-button">
+          </div>
+        </form>
+</body>
+</html>
